@@ -48,7 +48,7 @@ npx eslint . --fix
 npx tsc --init
 ```
 
-## Override default config
+## How To Override Default Config
 
 Add your custom ESLint or Prettier rules directly in `.eslintrc` or `package.json` file under `"rules"` (for ESLint) or `"prettier/prettier"` (for Prettier) field:
 
@@ -66,3 +66,24 @@ Add your custom ESLint or Prettier rules directly in `.eslintrc` or `package.jso
   }
 }
 ```
+
+## Integration with VSCode
+
+1. Uninstall or disable any previously installed prettier extensions.
+
+2. Install (if haven't already) [ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+
+3. Edit VSCode settings by pressing CMD + SHIFT + P on Mac (or Ctrl + SHIFT + P on Windows), type `settings` and choose `Preferences: Open Settings (JSON)`. Edit or add the following settings:
+
+```json
+// Format a file on save
+"editor.formatOnSave": true,
+// show eslint icon at bottom toolbar
+"eslint.alwaysShowStatus": true,
+// turns on Auto Fix for all providers including ESLint
+"editor.codeActionsOnSave": {
+  "source.fixAll": true
+}
+```
+
+Remove `"editor.defaultFormatter": "esbenp.prettier-vscode"` line if you had it before.
