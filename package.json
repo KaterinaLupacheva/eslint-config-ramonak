@@ -1,17 +1,29 @@
 {
   "name": "eslint-config-ramonak",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "Custom ESLint, TypeScript and Prettier Config",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint --ext js,jsx,ts,tsx --fix"
   },
   "keywords": [
     "eslint",
-    "eslintconfig"
+    "eslintconfig",
+    "typescript",
+    "config",
+    "prettier",
+    "react"
   ],
-  "author": "",
+  "author": "Kate Lupachova <contact@ramonak.io>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaterinaLupacheva/eslint-config-ramonak.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KaterinaLupacheva/eslint-config-ramonak/issues"
+  },
+  "homepage": "https://github.com/KaterinaLupacheva/eslint-config-ramonak",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.5.0",
     "@typescript-eslint/parser": "^5.5.0",
@@ -21,7 +33,8 @@
     "eslint-plugin-react": "^7.27.1",
     "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.2"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.5.0",
@@ -32,6 +45,7 @@
     "eslint-plugin-react": "^7.27.1",
     "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.2"
   }
 }
