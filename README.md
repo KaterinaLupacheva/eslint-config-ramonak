@@ -1,5 +1,7 @@
 # Eslint, TypeScript, and Prettier Setup
 
+[![NPM](https://img.shields.io/npm/v/eslint-config-ramonak)](https://www.npmjs.com/package/eslint-config-ramonak) ![npm downloads](https://img.shields.io/npm/dt/eslint-config-ramonak) ![license](https://img.shields.io/npm/l/eslint-config-ramonak)
+
 These are my Eslint, TypeScript, and Prettier settings that I use in React.js projects.
 
 ## Usage
